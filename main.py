@@ -7,6 +7,12 @@ import numpy as np
 sns.set_style('whitegrid')
 
 def create_n_random_dates(n = 100, years = 100):
+    '''function to build a random_dates list
+    :params n: length of entries in return list
+    :params years: amount of years to go back (from now)
+    :return date_list: date_list n entries long in format
+    [day, month, year, weekday]
+    '''
     days_per_year = 365.24
     hundred_years_datetime = timedelta(days=(years*days_per_year))
 
